@@ -29,67 +29,59 @@ This project is a beginner-friendly Flask application that displays random quote
 
 ---
 
-## 📦 Installation Requirements / Prerequisites
-
-Before running this project, ensure you have:
-
-- Python 3.8+ installed  
-- pip (Python package manager)  
-- A terminal (Windows CMD/PowerShell, macOS Terminal, or Linux shell)  
-- (Optional) Virtual environment tool: `venv`  
-
----
-
-## ⚙️ Installation & Setup Instructions
-
-1️⃣ **Clone the Repository**  
-
+⚙️ Installation & Setup Instructions
+1️⃣ Clone the Repository
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
-2️⃣ Create a Virtual Environment
 
+2️⃣ Create a Virtual Environment
 python -m venv venv
+
 3️⃣ Activate the Virtual Environment
 
 Windows:
 
-
 venv\Scripts\activate
+
+
 Mac/Linux:
 
-
 source venv/bin/activate
+
 4️⃣ Install Dependencies
-
 pip install flask
+
 5️⃣ Run the Application
-
-
 python app.py
+
 6️⃣ Open the Browser
+
 Visit: http://127.0.0.1:5000/
 
 🚀 Usage Example
-Launch the server with python app.py
+
+Start the server with:
+
+python app.py
+
 
 Open your browser
 
-Press the "Show Quote" button
+Click the "Show Quote" button
 
-A new inspirational quote will appear on the screen
+A new inspirational quote will appear
 
-API Example (Optional):
+API Example (Optional)
 
 GET /quote
 
 Response:
 
-
 {
   "quote": "Believe you can and you're halfway there."
 }
-📁 Project Structure Overview
 
+📁 Project Structure Overview
 [project-name]/
  ├── app.py               # Main Flask application
  ├── templates/
@@ -98,42 +90,55 @@ Response:
  │    └── script.js       # JavaScript for button functionality
  ├── venv/ (optional)     # Virtual environment
  └── README.md            # Project documentation
-🔧 Configuration Options
-You may optionally customize:
 
+🔧 Configuration Options
 Quotes List (in app.py)
+
+You can add or remove quotes:
 
 quotes = [
     "Your new quote here",
     "Another inspirational quote"
 ]
+
 Port / Debug Mode
 
+Customize the Flask run command:
 
 app.run(debug=True, port=5001)
-🐞 Troubleshooting
-❗ 1. ModuleNotFoundError: No module named ‘flask’
-You forgot to install Flask or activate your environment.
 
+🐞 Troubleshooting
+❗ 1. ModuleNotFoundError: No module named 'flask'
+
+You likely forgot to install Flask or activate the virtual environment.
+Fix:
 
 pip install flask
+
 ❗ 2. Button not showing quote
 
 Ensure script.js is correctly linked
 
-Confirm /quote route exists
+Check your browser console for errors
+
+Confirm that the /quote route exists
 
 ❗ 3. Cannot activate virtual environment (Windows)
 
+Try:
+
 Set-ExecutionPolicy Unrestricted -Scope Process
-Then activate again.
+
+
+Then activate the environment again.
 
 🤝 Contributing
+
 Contributions are welcome!
 
 To contribute:
 
-Fork the repo
+Fork the repository
 
 Create a new branch
 
@@ -141,9 +146,9 @@ Commit your changes
 
 Open a pull request
 
-Please ensure your code is clean and documented.
+Please ensure your code is clean and well-documented.
 
 📄 License
-This project is licensed under the MIT License.
-You may modify and distribute this project freely under the terms of the license.
 
+This project is licensed under the MIT License.
+You may use, modify, and distribute this project under the terms of the license.
