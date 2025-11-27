@@ -42,40 +42,35 @@ Before running this project, ensure you have:
 
 ## ⚙️ Installation & Setup Instructions
 
-1️⃣ **Clone the Repository** 
+1️⃣ **Clone the Repository**  
+
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
-
 2️⃣ Create a Virtual Environment
-python -m venv venv
 
+python -m venv venv
 3️⃣ Activate the Virtual Environment
 
 Windows:
 
+
 venv\Scripts\activate
-
-
 Mac/Linux:
 
+bash
+Copy code
 source venv/bin/activate
-
-
 4️⃣ Install Dependencies
 
 pip install flask
-
-
 5️⃣ Run the Application
 
+
 python app.py
-
-
 6️⃣ Open the Browser
 Visit: http://127.0.0.1:5000/
 
 🚀 Usage Example
-
 Launch the server with python app.py
 
 Open your browser
@@ -90,11 +85,13 @@ GET /quote
 
 Response:
 
+
 {
   "quote": "Believe you can and you're halfway there."
 }
-
 📁 Project Structure Overview
+text
+Copy code
 [project-name]/
  ├── app.py               # Main Flask application
  ├── templates/
@@ -103,31 +100,26 @@ Response:
  │    └── script.js       # JavaScript for button functionality
  ├── venv/ (optional)     # Virtual environment
  └── README.md            # Project documentation
-
 🔧 Configuration Options
-
 You may optionally customize:
 
 Quotes List (in app.py)
+
 
 quotes = [
     "Your new quote here",
     "Another inspirational quote"
 ]
-
-
 Port / Debug Mode
 
+
 app.run(debug=True, port=5001)
-
 🐞 Troubleshooting
-
 ❗ 1. ModuleNotFoundError: No module named ‘flask’
 You forgot to install Flask or activate your environment.
 
+
 pip install flask
-
-
 ❗ 2. Button not showing quote
 
 Ensure script.js is correctly linked
@@ -137,12 +129,9 @@ Confirm /quote route exists
 ❗ 3. Cannot activate virtual environment (Windows)
 
 Set-ExecutionPolicy Unrestricted -Scope Process
-
-
 Then activate again.
 
 🤝 Contributing
-
 Contributions are welcome!
 
 To contribute:
@@ -158,12 +147,6 @@ Open a pull request
 Please ensure your code is clean and documented.
 
 📄 License
-
-This project is licensed under the MIT License
-.
+This project is licensed under the MIT License.
 You may modify and distribute this project freely under the terms of the license.
 
-
-This version is **fully formatted in Markdown**, ready to paste directly into `README.md`.  
-
-If you want, I can also **add the AI Prompt Journal section directly into this README** so it includes your Capstone learning documentation. Do you want m
