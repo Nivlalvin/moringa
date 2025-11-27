@@ -57,8 +57,7 @@ Windows:
 venv\Scripts\activate
 Mac/Linux:
 
-bash
-Copy code
+
 source venv/bin/activate
 4️⃣ Install Dependencies
 
@@ -90,8 +89,7 @@ Response:
   "quote": "Believe you can and you're halfway there."
 }
 📁 Project Structure Overview
-text
-Copy code
+
 [project-name]/
  ├── app.py               # Main Flask application
  ├── templates/
@@ -104,7 +102,6 @@ Copy code
 You may optionally customize:
 
 Quotes List (in app.py)
-
 
 quotes = [
     "Your new quote here",
